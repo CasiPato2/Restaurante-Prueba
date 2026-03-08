@@ -1,0 +1,29 @@
+.navbar-gris{
+    background-color: #303030 !important;
+}
+
+.sombreado{
+font-weight: bold;
+text-shadow:
+-0.5px -0.5px 0 black,
+0.5px -0.5px 0 black,
+-0.5px 0.5px 0 black,
+0.5px 0.5px 0 black;
+}
+
+.icono-social img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.titulo{
+-webkit-text-stroke: 1px black;
+font-size: 40px;
+font-weight: bold;
+}
+
+.amarillo{
+    background-color: #e3b600;
+}
+
