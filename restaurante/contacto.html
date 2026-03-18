@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <script src="assets/Js/contactar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+<body class="navbar-gris">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand sombreado" href="#"><strong>Restaurante Elpa 🦆</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reservas</a>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html"><strong>Contacto</strong></a>
+                    </li>
+                </ul>
+            </div>         
+        </div>
+    </nav>
+
+    <div class="container mt-5 pb-4 pt-5 ">
+        <div class="row ">
+            <div class="col-md-6 bg-secondary rounded-2 text-white text-bg-dark">
+                <h2 class="mb-4 pt-3">Contáctanos!</h2>
+                <form action="">
+                    <div class="mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="" id="nombre" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo"class="form-label">E-mail</label>
+                        <input type="email" name="" id="correo" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" name="" id="mensaje" rows="4"></textarea>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <button type="button" class="mt-4 mb-3 btn btn-info sombreado text-white" onclick="enviarmensaje()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!--Logos Inst, Face y X (Twitter)-->
+            <div class="col-md-6 pt-5">
+                <div class="container">
+                    <div class="row  gap-4 icono-social">
+                        <div class="col-md-12 bg-secondary rounded border">
+                            <h2 class="text-center  titulo text-warning p-2"><strong> También puedes contactarnos por estas redes! </strong></h2>
+                        </div>
+
+                        <!--Instagram-->
+                        <div class="col-md-12 d-flex align-items-center justify-content-center gap-4 rounded p-2 border">  
+                            <img src="imagenes/Instagram.png"
+                            class="img-fluid rounded"
+                            alt="Encuentranos en Instagram como @Elpa 🦆"
+                            title="Encuentranos en Instagram como @Elpa 🦆">
+                            <h5 class="text-white sombreado"> @ElpaInst 🦆</h5>
+                        </div>
+
+                        <!--X (Twitter)-->
+                        <div class="col-md-12 d-flex align-items-center justify-content-center gap-4 rounded p-2 border">
+                            <img src="imagenes/X(Twitter).png"
+                            class="img-fluid rounded"
+                            alt="X(Twitter)"
+                            title="@Elpa 🦆">
+                            <h5 class="text-white sombreado"> @ElpaInst 🦆</h5>
+                        </div>
+
+                        <!--Facebook-->
+                        <div class="col-md-12 d-flex align-items-center justify-content-center gap-4 rounded p-2 border"> 
+                            <img src="imagenes/Facebook.png"
+                            class="img-fluid rounded"
+                            alt="Encuentranos en Faceebook como @Elpa 🦆"
+                            title="Encuentranos en Faceebook como @Elpa 🦆">
+                            <h5 class="text-white sombreado"> @ElpaInst 🦆</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbar-dark bg-rojo mt-5 py-5">
+        <div class="container text-white text-center">
+            <h5 class="sombreado">©2026 Elpa 🦆</h5>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

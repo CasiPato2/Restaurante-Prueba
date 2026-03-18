@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <script src="assets/Js/contactar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="navbar-gris">
+
+    <!--Parte de arriba-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <div class="container">
+            <a class="navbar-brand sombreado" href="#"><strong>Restaurante Elpa 🦆</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><strong>Reservas</strong></a>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <h3 class="text-white">|</h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>         
+        </div>
+    </nav>
+
+    <!--Parte de la reserva-->
+    <div class="container mt-5 p-4">
+        <div class=" shadow p-4 rounded-2 caja-reserva bg-secondary text-white">
+            <h2 class="text-center mb-3 border-top border-white"><strong>Reserva tu mesa</strong></h2>
+            <p class="text-center text-muted mb-4 border-bottom border-white">
+                Completa el formulario y te confirmaremos tu reserva.
+            </p>
+            <form>
+                <div class="mb-3">
+                <label class="form-label"><strong>Nombre completo</strong></label>
+                <input type="text" class="form-control" placeholder="Ej: Juan Pérez" id="nombre">
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label"><strong>Correo electrónico</strong></label>
+                <input type="email" class="form-control" placeholder="correo@ejemplo.com" id="correo">
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label" ><strong>Fecha de la reserva</strong></label>
+                <input type="date" class="form-control" id="fecha">
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label"><strong>Hora</strong></label>
+                <input type="time" class="form-control" id="hora">
+                </div>
+
+                <div class="mb-5">
+                <label class="form-label" ><strong>Número de personas</strong></label>
+                <select class="form-select" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select>
+                </div>
+
+                <div class="d-grid">
+                <button type="button" class="btn btn-info btn-lg text-white sombreado" onclick="ConfirmarReserva()">
+                    Reservar ahora
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+<!--Parte baja-->
+<footer class="navbar-dark bg-rojo py-3 mt-5">
+<div class="container text-center">
+    <h5 class="text-white"><strong>Contactanos en nuestras otras redes! </strong></h5>
+    <!--Logos Inst, Face y X (Twitter)-->
+    <div class="container d-flex justify-content-center mt-3 gap-4 icono-social ">
+        <a href="#">
+            <img src="imagenes/Instagram.png"
+            class="img-fluid rounded"
+            alt="Encuentranos en Instagram como @Elpa 🦆"
+            title="Encuentranos en Instagram como @Elpa 🦆">
+        </a>
+        <a href="#">
+            <img src="imagenes/X(Twitter).png"
+            class="img-fluid rounded"
+            alt="X(Twitter)"
+            title="@Elpa 🦆">
+        </a>
+        <a href="#">
+            <img src="imagenes/Facebook.png"
+            class="img-fluid rounded"
+            alt="Encuentranos en Faceebook como @Elpa 🦆"
+            title="Encuentranos en Faceebook como @Elpa 🦆">
+        </a>
+    </div>
+    <h5 class="pt-4 text-white sombreado">©2026 Elpa 🦆</h5>
+</div>
+</footer>
+</body>
+</html>
